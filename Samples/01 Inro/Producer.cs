@@ -20,9 +20,10 @@ namespace _01_Inro
                         return;
 
                     observer.OnNext(i);
-                    Thread.Sleep(1000);
+                    Thread.Sleep(100 * i);
                 }
                 observer.OnCompleted();
+                //observer.OnNext(100); // wrong implementation
             });
 
             return d;
