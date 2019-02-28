@@ -1,0 +1,11 @@
+﻿<Window x:Class="WpfRxAutoComplete.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="350" Width="525">
+    <StackPanel>
+        <StackPanel Orientation="Horizontal" Margin="5,10,5,0">
+            <TextBox x:Name="_txt" Width="200" FontSize="18"  HorizontalAlignment="Left" Background="LightYellow"/>
+        </StackPanel>
+        <ListBox ItemsSource="{Binding Results}" FontSize="18" Background="WhiteSmoke" Height="250" Margin="5,10,5,0" Grid.Row="1"/>
+    </StackPanel>
+</Window>
