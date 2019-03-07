@@ -10,7 +10,8 @@ namespace _02_Cond_Cancel
     {
         static void Main(string[] args)
         {
-             var xs = Observable.Create<bool>(async (observer) =>
+            Console.WriteLine("Start");
+            var xs = Observable.Create<bool>(async (observer) =>
             {
                 observer.OnNext(true);
                 observer.OnNext(false);
@@ -23,15 +24,17 @@ namespace _02_Cond_Cancel
                 observer.OnCompleted();
             });
 
-            xs = xs.Publish().RefCount();
+            var zs = xs.Publish(hot =>
+            {
 
-            var ts = xs.Where(m => m);
-            var fs = xs.Where(m => !m)
-                        .Delay(TimeSpan.FromSeconds(0.5))
-                        .TakeUntil(ts) // ignore when 'true' produce during the delay
-                        .Repeat();
+                var ts = hot.Where(m => m);
+                var fs = hot.Where(m => !m)
+                            .Delay(TimeSpan.FromSeconds(0.5))
+                            .TakeUntil(ts) // ignore when 'true' produce during the delay
+                            .Repeat();
 
-            var zs = Observable.Merge(ts, fs);
+                return Observable.Merge(ts, fs);
+            });
 
             zs.Subscribe(v => Console.WriteLine(v));
             Console.ReadKey();

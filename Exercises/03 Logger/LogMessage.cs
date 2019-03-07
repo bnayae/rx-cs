@@ -25,5 +25,10 @@ namespace _03_Logger
         public DateTime Date { get; }
         public string Content { get; }
         public Exception Exception { get; }
+
+        public override string ToString() => $"{Date:yyy-MM-dd HH:mm:ss} [{Level}]: {Content}, Error = {Exception}";
+
     }
+
+
 }
