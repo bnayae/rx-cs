@@ -25,25 +25,27 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "09 Subject Mediator", "samp
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "More", "More", "{EC734A9D-A297-4004-BA0F-17F420D5D8F9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Select vs SelectAsync", "samples\more\Select vs SelectAsync\Select vs SelectAsync.csproj", "{C704709C-CAD4-4CA8-A21F-2E77AB43FB2A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Select vs SelectAsync", "samples\more\Select vs SelectAsync\Select vs SelectAsync.csproj", "{C704709C-CAD4-4CA8-A21F-2E77AB43FB2A}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Exercises", "Exercises", "{1135A1DA-CA2A-49EE-A6F6-678794994D5F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01 UnPredictable", "Exercises\01 UnPredictable\01 UnPredictable.csproj", "{43534EA9-C7F8-4BC0-827D-A54A03ADD8A7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "01 UnPredictable", "Exercises\01 UnPredictable\01 UnPredictable.csproj", "{43534EA9-C7F8-4BC0-827D-A54A03ADD8A7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "10 Replay", "samples\010\10 Replay.csproj", "{B7F6841F-EB99-40A7-96A0-6B2E69089CA3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "10 Replay", "samples\010\10 Replay.csproj", "{B7F6841F-EB99-40A7-96A0-6B2E69089CA3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02 Cond Cancel", "exercises\02 Cond Cancel\02 Cond Cancel.csproj", "{06CDEAE3-1D8D-4FD4-A86C-A74CAACDAE69}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "02 Cond Cancel", "exercises\02 Cond Cancel\02 Cond Cancel.csproj", "{06CDEAE3-1D8D-4FD4-A86C-A74CAACDAE69}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "11 Buffer", "samples\11 Buffer\11 Buffer.csproj", "{BCA4EEEF-2054-4767-B32D-7B2055D5B6EA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "11 Buffer", "samples\11 Buffer\11 Buffer.csproj", "{BCA4EEEF-2054-4767-B32D-7B2055D5B6EA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "12 Windows + Aggregate", "samples\12 Windows + Aggregate\12 Windows + Aggregate.csproj", "{1AB43349-0921-4BC5-84F1-C79DE2C74288}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "12 Windows + Aggregate", "samples\12 Windows + Aggregate\12 Windows + Aggregate.csproj", "{1AB43349-0921-4BC5-84F1-C79DE2C74288}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "13 Custom Aggregation", "samples\13 Custom Aggregation\13 Custom Aggregation.csproj", "{479BB0CD-37C7-4594-BEB9-6A0B70375984}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "13 Custom Aggregation", "samples\13 Custom Aggregation\13 Custom Aggregation.csproj", "{479BB0CD-37C7-4594-BEB9-6A0B70375984}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "14 Scan", "samples\14 Scan\14 Scan.csproj", "{392C3688-997B-42C8-883A-C3E78A5B66D3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "14 Scan", "samples\14 Scan\14 Scan.csproj", "{392C3688-997B-42C8-883A-C3E78A5B66D3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "16 Groupby", "samples\16 Groupby\16 Groupby.csproj", "{DC81FEF4-3446-470A-8DF1-ADF81BAB509E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "16 Groupby", "samples\16 Groupby\16 Groupby.csproj", "{DC81FEF4-3446-470A-8DF1-ADF81BAB509E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03 Logger", "exercises\03 Logger\03 Logger.csproj", "{49A31F1F-6DF1-4C96-9D77-D371C0FF218D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -197,6 +199,14 @@ Global
 		{DC81FEF4-3446-470A-8DF1-ADF81BAB509E}.Release|Any CPU.Build.0 = Release|Any CPU
 		{DC81FEF4-3446-470A-8DF1-ADF81BAB509E}.Release|x86.ActiveCfg = Release|Any CPU
 		{DC81FEF4-3446-470A-8DF1-ADF81BAB509E}.Release|x86.Build.0 = Release|Any CPU
+		{49A31F1F-6DF1-4C96-9D77-D371C0FF218D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{49A31F1F-6DF1-4C96-9D77-D371C0FF218D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{49A31F1F-6DF1-4C96-9D77-D371C0FF218D}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{49A31F1F-6DF1-4C96-9D77-D371C0FF218D}.Debug|x86.Build.0 = Debug|Any CPU
+		{49A31F1F-6DF1-4C96-9D77-D371C0FF218D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{49A31F1F-6DF1-4C96-9D77-D371C0FF218D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{49A31F1F-6DF1-4C96-9D77-D371C0FF218D}.Release|x86.ActiveCfg = Release|Any CPU
+		{49A31F1F-6DF1-4C96-9D77-D371C0FF218D}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -221,6 +231,7 @@ Global
 		{479BB0CD-37C7-4594-BEB9-6A0B70375984} = {CC1F5E3E-CAF1-42EB-A1AE-7CB30D6FABEE}
 		{392C3688-997B-42C8-883A-C3E78A5B66D3} = {CC1F5E3E-CAF1-42EB-A1AE-7CB30D6FABEE}
 		{DC81FEF4-3446-470A-8DF1-ADF81BAB509E} = {CC1F5E3E-CAF1-42EB-A1AE-7CB30D6FABEE}
+		{49A31F1F-6DF1-4C96-9D77-D371C0FF218D} = {1135A1DA-CA2A-49EE-A6F6-678794994D5F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {C3175D05-4973-4384-99A2-2E759FE21E15}
